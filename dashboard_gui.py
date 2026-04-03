@@ -1,3 +1,5 @@
+# dashboard_gui.py - Hauptoberflaeche des Dashboards
+
 import tkinter as tk
 from tkinter import ttk, messagebox
 from dashboard_controller import DashboardController
@@ -6,8 +8,8 @@ from modul_status import ModulStatus
 
 
 class DashboardGUI:
-    """Hauptoberflaeche des Dashboards.
     
+    """Hauptoberflaeche des Dashboards.
     Stellt den Studienfortschritt in einer Tabelle dar und zeigt
     aggregierte Kennzahlen an. Kennt den Controller, um Benutzeraktionen
     an ihn zu delegieren. Aktualisiert sich nach jeder Aktion selbst.

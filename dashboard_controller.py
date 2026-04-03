@@ -1,3 +1,5 @@
+# dashboard_controller.py - Zentrale Steuerung der Anwendung
+
 import os
 from datetime import date
 from studiengang import Studiengang
@@ -12,7 +14,6 @@ from data_manager import DataManager
 class DashboardController:
 
     """Zentrale Steuerung der Anwendung.
-    
     Koordiniert die Ablaeufe zwischen Fachmodell, Service und DataManager.
     Der Controller kennt die GUI nicht - die Aktualisierung der Darstellung
     wird von der GUI selbst angestossen.

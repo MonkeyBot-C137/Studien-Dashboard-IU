@@ -1,12 +1,18 @@
-# semester.py
-# Repraesentiert ein Semester innerhalb des Studiengangs.
-# Enthaelt eine Liste von Modul-Objekten (Komposition: ein Modul
-# existiert nur im Kontext eines Semesters).
+# semester.py - Klasse Semester mit zugeordneten Modulen
 
 from modul import Modul
 
 
 class Semester:
+    
+    """Repraesentiert ein Semester innerhalb des Studiengangs.
+    
+    Enthaelt eine Liste von Modul-Objekten (Komposition).
+    
+    Attribute:
+        nummer (int): Semesternummer
+        bezeichnung (str): Anzeigename des Semesters
+    """
 
     def __init__(self, nummer: int, bezeichnung: str):
         self.nummer = nummer

@@ -1,3 +1,5 @@
+# modul.py - Klasse Modul mit Stammdaten und modulbezogenen Berechnungen
+
 from datetime import date
 from modul_status import ModulStatus
 from pruefungsleistung import Pruefungsleistung
@@ -8,8 +10,8 @@ TAGE_PRO_5_ECTS = 30
 
 
 class Modul:
-    """Repraesentiert ein einzelnes Modul im Studiengang.
     
+    """Repraesentiert ein einzelnes Modul im Studiengang.
     Attribute:
         name (str): Kursname des Moduls
         ects (int): ECTS-Punkte des Moduls

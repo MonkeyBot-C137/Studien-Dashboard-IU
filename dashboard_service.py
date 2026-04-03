@@ -1,3 +1,5 @@
+# dashboard_service.py - Studienweite Berechnungen als zustandsloser Service
+
 from datetime import date
 from studiengang import Studiengang
 from modul_status import ModulStatus
@@ -5,13 +7,13 @@ from modul_status import ModulStatus
 
 class DashboardService:
 
+    """Buendelt alle studienweiten Berechnungen.
+    Die Methoden sind zustandslos - der Studiengang wird jeweils
+    als Parameter uebergeben. Dadurch bleibt der Service unabhaengig
+    von der Oberflaeche und der Datenstruktur des Fachmodells.
+    """
+
     def berechne_durchschnittsnote(self, studiengang: Studiengang) -> float:
-        """Buendelt alle studienweiten Berechnungen.
-    
-        Die Methoden sind zustandslos - der Studiengang wird jeweils
-        als Parameter uebergeben. Dadurch bleibt der Service unabhaengig
-        von der Oberflaeche und der Datenstruktur des Fachmodells.
-        """
         summe_noten_gewichtet = 0.0
         summe_ects = 0
         for sem in studiengang.semester:

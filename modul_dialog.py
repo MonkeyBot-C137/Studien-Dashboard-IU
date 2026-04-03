@@ -1,3 +1,5 @@
+# modul_dialog.py - Eingabemaske fuer Moduldaten
+
 import tkinter as tk
 from tkinter import ttk, messagebox
 from datetime import date
@@ -6,8 +8,8 @@ from modul_status import ModulStatus
 
 
 class ModulDialog:
+
     """Eingabemaske fuer Moduldaten.
-    
     Wird als modales Fenster geoeffnet und kann sowohl fuer das
     Hinzufuegen neuer Module als auch fuer das Bearbeiten
     bestehender Module verwendet werden.

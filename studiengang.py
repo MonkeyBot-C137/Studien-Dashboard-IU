@@ -1,15 +1,23 @@
-# studiengang.py
-# Repraesentiert den gesamten Studiengang und bildet die oberste Ebene
-# des Fachmodells. Enthaelt die Rahmendaten des Studiums sowie eine
-# Liste von Semester-Objekten (Komposition).
-# Die Klasse dient ausschliesslich der Datenhaltung - studienweite
-# Berechnungen sind im DashboardService ausgelagert.
+# studiengang.py - Klasse Studiengang als oberste Ebene des Fachmodells
 
 from datetime import date
 from semester import Semester
 
 
 class Studiengang:
+    
+    """Repraesentiert den gesamten Studiengang als oberste Ebene des Fachmodells.
+    
+    Dient ausschliesslich der Datenhaltung - studienweite
+    Berechnungen sind im DashboardService ausgelagert.
+    
+    Attribute:
+        name (str): Name des Studiengangs
+        gesamt_ects (int): Gesamtzahl der ECTS-Punkte
+        startdatum (date): Beginn des Studiums
+        ziel_datum (date): Geplantes Studienende
+        ziel_notendurchschnitt (float): Angestrebter Notendurchschnitt
+    """
 
     def __init__(self, name: str, gesamt_ects: int, startdatum: date,
                  ziel_datum: date, ziel_notendurchschnitt: float):

@@ -1,3 +1,5 @@
+# data_manager.py - Laden und Speichern des Studiengangs im JSON-Format
+
 import json
 from datetime import date
 from studiengang import Studiengang
@@ -8,8 +10,8 @@ from pruefungsleistung import Pruefungsleistung
 
 
 class DataManager:
-    """Kapselt das Laden und Speichern der Daten in einer JSON-Datei.
     
+    """Kapselt das Laden und Speichern der Daten in einer JSON-Datei.
     Trennt die Dateiverwaltung vollstaendig von der restlichen
     Anwendungslogik. Der Studiengang wird als Parameter uebergeben
     bzw. zurueckgeliefert.

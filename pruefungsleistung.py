@@ -1,13 +1,16 @@
-# pruefungsleistung.py
-# Repraesentiert die Pruefungsleistung eines Moduls.
-# Attribute sind gekapselt (fuehrender Unterstrich) und werden
-# ueber Properties kontrolliert zugaenglich gemacht.
-# Setter validieren die Eingaben, um ungueltige Daten fruehzeitig abzufangen.
+# pruefungsleistung.py - Klasse Pruefungsleistung mit Note und Abschlussdatum
 
 from datetime import date
 
 
 class Pruefungsleistung:
+    
+    """Repraesentiert die Pruefungsleistung eines Moduls.
+    
+    Attribute:
+        note (float): Erzielte Note (1.0 bis 4.0)
+        abschlussdatum (date): Datum der Pruefung
+    """
 
     def __init__(self, note: float, abschlussdatum: date):
         # Zuweisung ueber die Setter, damit die Validierung greift

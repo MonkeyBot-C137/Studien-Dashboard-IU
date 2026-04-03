@@ -1,6 +1,4 @@
-# main.py
-# Einstiegspunkt der Anwendung. Erstellt den Controller mit dem
-# Pfad zur JSON-Datei und startet die grafische Oberflaeche.
+# main.py - Einstiegspunkt der Anwendung
 
 import os
 from dashboard_controller import DashboardController
